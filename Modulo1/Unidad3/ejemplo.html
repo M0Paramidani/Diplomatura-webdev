@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Primer clase de html</title>
+</head>
+<body>
+    <!--esto es un comentario-->
+    <!-- el atajo es ctrl+] (a la izq del enter en la linea de la ñ)-->
+    <!-- los encabezados no se deben repetir mas de 1 vez por pagina -->
+    <h1>encabezado 1</h1>
+    <h2>encabezado 2</h2>
+    <h3>encabezado 3</h3>
+    <h4>encabezado 4</h4>
+    <h5>encabezado 5</h5>
+    <h6>encabezado 6</h6>
+    <!-- con la etiqueta p señalizamos un parrafo -->
+    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Illo facilis incidunt rem necessitatibus iste a, in explicabo ad ea veniam nihil eius unde laboriosam corporis reiciendis laborum nisi saepe minus?</p>
+
+    <h3>ejemplo de lista sin orden</h3>
+    <!-- ul es la etiqueta para listas desordenadas, las listas se veran con puntos -->
+    <ul>
+        <!-- la etiqueta li es para señalizar cada punto de la lista -->
+        <li>pan</li>
+        <li>queso</li>
+        <li>jamon</li>
+    </ul>
+
+    <h3>ejemplo de lista ordenada</h3>
+    <!-- ol es la etiqueta para listas ordenadas, se vera con numeros -->
+    <ol>
+        <li>pan</li>
+        <li>queso</li>
+        <li>jamon</li>
+    </ol>
+    <h3>etiqueta a presiona <a href="prueba.html">aqui</a> para redirigirte a otra pagina. Presiona <a href="prueba.html" target="blank">aqui</a> para abrir la pagina en una nueva ventana</h3>
+    <h3>etiqueta imagen</h3>
+    <img src="img/dipper.jpg" alt="dipper">
+    <h3>miren un circulo!</h3>
+    <!-- svg crea un espacio vectorial para un grafico, circle crea un circulo -->
+    <svg width="100" height = "100">
+        <circle cx="50" cy="50" r="40" stroke="blue" stroke-width="4" fill="red"></circle>
+    </svg>
+
+    <h3>ahora viene la hora del formulario</h3>
+    <!-- el tag form crea un lugar para agregar el formulario -->
+    <form action="" method="">
+        <p>
+            <!-- el tag label crea un "nombre" para nuestro input, si se le asigna un "for" junto con el id en el tag input se "linkean"
+            el tag input puede recibir diferentes tipos de datos (text, password, radio, checkbox) -->
+            <label for="nom">Nombre</label>
+            <input type="text" name="nombre" id="nom">
+        </p>
+        <p>
+            <!-- podemos agregar un placeholder al input para que aparezca por defecto un texto dentro -->
+            <input type="text" name="Apellido" placeholder="Apellido">    
+        </p>
+        <label for="sexo">Sexo</label>
+        <ul>
+            <li>
+                <!-- el type "radio" agrega una casilla de opcion -->
+                <input type="radio" name="sexo" value="Hombre">
+                <label>Hombre</label>
+            </li>
+            <li>
+                <input type="radio" name="sexo" value="Mujer">
+                <label>Mujer</label>
+            </li>
+            <li>
+                <input type="radio" name="sexo" value="Otro">
+                <label>Otro</label>
+            </li>
+        </ul>
+        <label for="">Hobbies</label>
+        <ul>
+            <li>
+                <input type="checkbox" name="hobbies[]" value="bailar" id="bailar">
+                <label for="bailar">bailar</label>
+            </li>
+            <li>
+                <input type="checkbox" name="hobbies[]" value="nadar" id="nadar">
+                <label for="nadar">nadar</label>
+            </li>
+            <li>
+                <input type="checkbox" name="hobbies[]" value="cantar" id="cantar">
+                <label for="cantar">cantar</label>
+            </li>
+            <li>
+                <input type="checkbox" name="hobbies[]" value="correr" id="correr">
+                <label for="correr">correr</label>
+            </li>
+        </ul>
+        <p>
+            <label for="titulo">Titulo</label>
+            <select name="titulo" >
+                <option value="primario">primario</option>
+                <option value="secundario">secundario</option>
+                <option value="terciario">terciario</option>
+                <option value="universitario">universitario</option>
+            </select>
+        </p>
+        <p>
+            <label for="comentarios">comentarios</label>
+            <textarea name="comentarios"></textarea>
+        </p>
+        <p>
+            <input type="submit" value="enviar">
+            <input type="reset" value="borrar">
+        </p>     
+    </form> 
+    <h3>Etiqueta audio</h3>   
+    <p>
+        <audio src="img/4d165900-39b7-4818-acbd-8dd45a412e40.mp4" controls></audio>
+    </p>
+    <h3>Etiqueta video</h3>
+    <p>
+        <video src="img/4d165900-39b7-4818-acbd-8dd45a412e40.mp4" controls></video>
+    </p>
+</body>
+</html>
