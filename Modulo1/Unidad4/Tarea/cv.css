@@ -10,7 +10,6 @@ h1{
 #datos{ 
     height: 100px;
     width: 500px;
-    box-sizing: border-box;
     background-color: antiquewhite;
 }
 #fondo{
@@ -21,13 +20,13 @@ h1{
 #gustos{
     width: 500px;
     background-color: aquamarine;
-    box-sizing: border-box;
+    padding-bottom: 5px;
 }
 #juegos{
     width: 500px;
     background-color: darkgray;
-    box-sizing: border-box;
     font-style: oblique;
+    padding-bottom: 3px;
 }
 #especial{
     font-style: italic;
