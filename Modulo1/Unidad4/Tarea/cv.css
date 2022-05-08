@@ -1,0 +1,36 @@
+h1{
+    color: darkslateblue;
+    font-weight: bolder;
+    font-style: italic;
+    text-align: center;
+}
+#fotoPerfil{
+    margin-left: 79px;
+}
+#datos{ 
+    height: 100px;
+    width: 500px;
+    box-sizing: border-box;
+    background-color: antiquewhite;
+}
+#fondo{
+    width: 500px;
+    background-color: beige;
+    margin: 0 auto;
+}
+#gustos{
+    width: 500px;
+    background-color: aquamarine;
+    box-sizing: border-box;
+}
+#juegos{
+    width: 500px;
+    background-color: darkgray;
+    box-sizing: border-box;
+    font-style: oblique;
+}
+#especial{
+    font-style: italic;
+    font-weight: bold;
+
+}
